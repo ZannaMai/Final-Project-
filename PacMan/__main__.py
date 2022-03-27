@@ -1,5 +1,5 @@
 from game.casting.cast import Cast
-from game.casting.snake import Actor
+from game.casting.actor import Actor
 from game.directing.director import Director
 from game.services.keyboard_service import KeyboardService
 from game.services.video_service import VideoService
