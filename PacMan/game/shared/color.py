@@ -1,4 +1,4 @@
-# colorsclass Color:
+class Color: 
     """A color.
     The responsibility of Color is to hold and provide information about itself. Color has a few 
     convenience methods for comparing them and converting to a tuple.
