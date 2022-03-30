@@ -1,7 +1,7 @@
 # pac-man and ghosts
 import pygame
 import random
-from settings import *
+# from settings import *
 
 vec = pygame.math.Vector2
 
@@ -90,7 +90,7 @@ class Player:
 
 
 # Ghost
-class ghost:
+class Ghost:
     def __init__(self, app, pos, number):
         self.app = app
         self.grid_pos = pos
