@@ -13,15 +13,16 @@ gone, the player loses the game, and can then chose to play again.
 ---
 The project files and folders are organized as follows:
 
-Final-Project-          (project root folder)
-+-- PacMan              (main folder)
-  +-- game              (source code for game)
-    +-- casting         (specific game classes)
-    +-- directing       (class for directing others)
-    +-- services        (keyboard and video) 
-    +-- shared          (color and point)
-  +-- __main__.py       (entry point for program)
-+-- README.md           (This file - Description of game, file structure, required software, and authors)
+Final-Project-            (project root folder)
++-- PacMan                (main folder)
+    +-- app_class.py      (specific game classes)
+    +-- enemy_class.py    (class for creating ghosts)
+    +-- player_class.py   (creates PacMan) 
+    +-- settings.py       (creates window and sets defaults)
+    +-- maze.png          (image for game grid)
+    +-- walls.txt         (establishes playable spaces)
+  +-- main.py             (entry point for program)
++-- README.md             (This file - Description of game, file structure, required software, and authors)
 
 ```
 ## Required Software
