@@ -59,13 +59,13 @@ class App:
         screen.blit(text, pos)
 
     def load(self):
-        self.background = pygame.image.load('maze.png')
+        self.background = pygame.image.load('PacMan/maze.png')
         self.background = pygame.transform.scale(self.background, (MAZE_WIDTH, MAZE_HEIGHT))
 
         # Opening walls file
         # Creating walls list with co-ords of walls
         # stored as  a vector
-        with open("walls.txt", 'r') as file:
+        with open("PacMan/walls.txt", 'r') as file:
             for yidx, line in enumerate(file):
                 for xidx, char in enumerate(line):
                     if char == "1":
@@ -82,7 +82,7 @@ class App:
 
     def make_enemies(self):
         for idx, pos in enumerate(self.e_pos):
-            self.enemies.append(Enemy(self, vec(pos), idx))
+            self.enemies.append(Ghost(self, vec(pos), idx))
 
     def draw_grid(self):
         for x in range(WIDTH//self.cell_width):
@@ -107,7 +107,7 @@ class App:
             enemy.direction *= 0
 
         self.coins = []
-        with open("walls.txt", 'r') as file:
+        with open("PacMan/walls.txt", 'r') as file:
             for yidx, line in enumerate(file):
                 for xidx, char in enumerate(line):
                     if char == 'C':
