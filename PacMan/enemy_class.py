@@ -1,7 +1,7 @@
 # pac-man and ghosts
 import pygame
 import random
-# from settings import *
+from settings import *
 
 vec = pygame.math.Vector2
 

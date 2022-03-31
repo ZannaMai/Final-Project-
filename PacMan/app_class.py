@@ -82,7 +82,7 @@ class App:
 
     def make_enemies(self):
         for idx, pos in enumerate(self.e_pos):
-            self.enemies.append(Enemy(self, vec(pos), idx))
+            self.enemies.append(Ghost(self, vec(pos), idx))
 
     def draw_grid(self):
         for x in range(WIDTH//self.cell_width):
